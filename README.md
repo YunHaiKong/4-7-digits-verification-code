@@ -32,9 +32,10 @@
 ## 项目结构
 
 ```
-6-UI界面优化/
+4-7-digits-verification-code/
 ├── train_alphanumeric_crnn.py    # 主训练脚本
 ├── requirements.txt              # 依赖包列表
+├── generate_alphanumeric_captcha.py  # 验证码生成脚本
 ├── train_alphanumeric/          # 训练数据集
 │   ├── 4/                      # 4字符验证码
 │   ├── 5/                      # 5字符验证码
@@ -67,7 +68,6 @@ matplotlib>=3.3.4
 1. **克隆项目**
 ```bash
 git clone <项目地址>
-cd 6-UI界面优化
 ```
 
 2. **安装依赖**
@@ -81,6 +81,12 @@ pip install -r requirements.txt
    - 支持4-7位字符的验证码
 
 ## 使用方法
+
+### 生成图片
+
+```bash
+python generate_alphanumeric_captcha.py
+```
 
 ### 训练模型
 
